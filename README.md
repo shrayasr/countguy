@@ -1,5 +1,5 @@
 #Countguy
-> AKA the person who keeps a track of everything you do
+> AKA that "clicky-clicky" thing
 
 ##What?
 This was built to solve a problem for my friend. He is not a programmer but he loves to solve small problems in his team that can be solved through building in-house apps. The easiest way to get these "small" apps approved is by keeping a count of how many times it has been used. Initially there was only one app but as he started exploring more processes, it turned out that there were more apps that could be built -- Hence this. 
