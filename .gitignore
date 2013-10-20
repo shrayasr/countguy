@@ -1,7 +1,6 @@
 # Project specific
 env/
-data/
-out/
+*.db
 
 # Created by http://gitignore.io
 
