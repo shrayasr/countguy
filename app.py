@@ -125,8 +125,11 @@ def counts():
             return "invalid request"
         
     elif request.method == 'GET':
-        listOfcounts = getAllCounts()
-        return json.dumps(listOfcounts)
+        appCounts = getAllCounts()
+        if len(appCounts) == 0:
+            return "No apps exist"
+        else:
+            return json.dumps(appCounts)
 
 
 '''
