@@ -5,7 +5,7 @@ from flask import Flask,g,request
 
 ##### GLOBALS #####
 app = Flask(__name__)
-DB = 'test.db'
+DB = 'countguy.db'
 ##########
 
 ##### DB FUNCTIONS #####
