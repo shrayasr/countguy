@@ -93,14 +93,14 @@ def sayHello():
     return "Welcome to Countguy(tm)"
 
 '''
-    /counts/
+    /apps/
 
     GET
         Get the list of counts for ALL apps
     POST
         Create a new app
 '''
-@app.route("/counts/", methods=['GET','POST'])
+@app.route("/apps/", methods=['GET','POST'])
 def counts():
 
     if request.method == 'POST':
@@ -122,20 +122,19 @@ def counts():
         else:
             return json.dumps(appCounts)
 
-
 '''
-    /counts/<app>/
+    /apps/<app>/
 
     GET
         Get the counts for the "app"
     POST
-        Increment the count for the "app"
+        Increment the count for the "app" by 1
     PUT
         Set the count for the "app"
     DELETE
         Delete that app
 '''
-@app.route("/counts/<appName>/", methods=['GET','POST','DELETE','PUT'])
+@app.route("/apps/<appName>/", methods=['GET','POST','DELETE','PUT'])
 def appCounts(appName):
 
     appName = appName.strip()
