@@ -14,16 +14,7 @@ DB = 'test.db'
 def connectDB():
     return sqlite3.connect(DB);
 
-'''
-    Initialize the DB
-
-    This should be called from the commandline as:
-        $ python
-        > from app import initializeDB
-        > initializeDB()
-
-    That will yield a DB in this directory under the name chosed in your Global variable section
-'''
+# Initialize the DB, see README on how to
 def initializeDB():
     db = connectDB()
     with app.open_resource('schema.sql',mode='r') as f:
